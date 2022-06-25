@@ -1,5 +1,5 @@
 #!/bin/sh
-DOMAIN=$(curl http://169.254.169.254/latest/meta-data/public-ipv5)
+DOMAIN=$(curl http://169.254.169.254/latest/meta-data/public-ipv4)
 echo $DOMAIN
 
 # Get the current machine IP address
@@ -119,3 +119,4 @@ sudo echo "You can login with the email 'admin@admin.com' and password of 'passw
 sudo echo "MySQL was installed without a root password, It is recommended that you set a root MySQL password."
 sudo echo ""
 sudo echo "You can access your BookStack instance at: http://$CURRENT_IP/ or http://$DOMAIN/"
+sudo mkdir /home/ubuntu/haha
